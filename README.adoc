@@ -1,0 +1,47 @@
+== YubiKey Minidriver Tool
+
+A tool for performing various tasks via the YubiKey Minidriver.
+
+This tool also serves as example code for using the Windows Smart Card Key Storage Provider
+to create self-signed certificate via the YubiKey Minidriver.
+
+=== Build Setup
+
+Open CMakeLists.txt with Visual Studio 2017+ or use a Visual Studio command prompt and
+generate the build files from your working directory as follows:
+
+[source, bash]
+----
+md build
+cd build
+cmake -G "Ninja" ..
+----
+
+=== Invoke
+
+Run the tool from the build/src directory.  It will show you a list of accepted command
+line arguments.  Not all commands are completely implemented.
+
+[source, bash]
+----
+cd src
+ykmd-tool.exe 
+----
+
+=== License
+
+....
+ Copyright 2015-2018 Yubico AB
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+....
